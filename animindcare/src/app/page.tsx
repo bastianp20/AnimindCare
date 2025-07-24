@@ -1,11 +1,20 @@
-'useClient'; 
-import { useState} from 'react'; 
-
+'use client'; 
+import React from 'react'; 
+import Tarjetas from './components/tarjetas'
+import  Footer  from './components/footer';
+import { tarjetaData } from './data/tarjeta_data';
 export default function Homepage(){
-  const [mostrarModal, setMostrarModal] = useState(false); 
-
-  const HandleVeterinarioClick = () =>{
-    setMostrarModal(true); {/* con el click se muestra el modal*/ }
-  }  
+  return(
+  <main>
+    <div className='tarjeta_hijo'>
+      {tarjetaData.map((tarjeta, idx) => (
+        <Tarjetas key={idx} {...tarjeta}/>
+      ))}
+    </div>
+    <Footer />
+  </main>
+);
 }
+
+
 

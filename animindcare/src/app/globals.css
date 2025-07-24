@@ -7,3 +7,12 @@
 .container{
     display: flex;
 }
+
+.tarjeta_hijo {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 20px;
+    background: rgb(235, 232, 232);
+}
