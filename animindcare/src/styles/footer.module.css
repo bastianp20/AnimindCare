@@ -1,8 +1,8 @@
 .pie{
-    background-color: #1a1a1a; /* fondo oscuro */
-    color: #f0f0f0; /* texto claro */
+    background-color: #ede9e9; /* fondo oscuro */
+    color: #0c0c0c; /* texto claro */
     text-align: center; /* texto centrado */
     padding: 20px 10px; /* espacio interior */
     font-size: 14px;
-    border-top: 2px solid #333; /* línea separadora */
+    /*border-top: 2px solid #e1dede; /* línea separadora */
 }

@@ -1,15 +1,17 @@
 .tarjeta {
   display: flex;
-  align-items: center;
+  flex-direction: column; /* elementos internos en columna */
+  align-items: center;    /* esto centra icono, texto y botón */
+  justify-content: space-between;
   gap: 12px;
-  padding: 12px 16px;
+  padding: 16px;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: auto;          /* <- asegura que no ocupe todo el ancho */
-  max-width: 300px;     /* <- tamaño máximo para que no se alargue */
+  width: 200px;           /* ancho fijo para que se vea como tarjeta */
+  text-align: center;     /* esto es pa centrar el texto */
 }
 
 .tarjeta:hover {
@@ -25,8 +27,6 @@
 
 .tarjeta a,
 .tarjeta button {
-  margin-top: 4px;
-  display: inline-block;
   background-color: #2563eb;
   color: white;
   padding: 6px 12px;

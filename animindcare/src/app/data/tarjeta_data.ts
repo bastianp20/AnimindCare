@@ -24,12 +24,12 @@ export const tarjetaData : TarjetaData[]= [
         Icon: FaDog,
         title: "Perfil Mascota",
         linkText: "Ver Mascotas",
-        href: "/Ver Mascotas" 
+        href: "/Mascota" 
     },
     {
         Icon: FaFileMedical,
         title: "Informes y Recetas",
-        linkText: "Ver Más",
+        linkText: "Ver informes y detalles",
         href: "/Ver informes" 
     },
     {
