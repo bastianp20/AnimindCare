@@ -1,0 +1,118 @@
+/* Fondo oscuro que cubre toda la pantalla */
+.ventana {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* negro translúcido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Clase extra que muestra el modal */
+.abierto {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Caja blanca centrada */
+.ventana-contenido {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  animation: aparecer 0.3s ease;
+}
+
+/* Animación de aparición */
+@keyframes aparecer {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Botón de cierre (la X) */
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.cerrar:hover {
+  color: #000;
+}
+
+/* Inputs del formulario */
+.ventana-contenido input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Botón de login */
+.boton-login {
+  display: inline-block; 
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(135deg, #313846, #6687f1); /* degradado */
+  color: #fff; /* texto blanco para mejor contraste */
+  font-weight: 600;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.boton-login:hover {
+  background: linear-gradient(135deg, #1e40af, #2563eb); /* invierte degradado */
+  transform: translateY(-2px); /* efecto “levantar” */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.boton-login:active {
+  transform: scale(0.97); /* efecto “clic” */
+}
+
+
+/* Links de abajo */
+.login-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login-links a {
+  color: #292c32;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+  border-inline-start: #000;
+}
+
+.login-links a:hover {
+  color: #1e40af;
+  text-decoration:underline
+}

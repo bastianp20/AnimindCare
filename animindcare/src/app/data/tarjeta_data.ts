@@ -18,7 +18,6 @@ export const tarjetaData : TarjetaData[]= [
         Icon: FaUserMd,
         title: "Acceso Veterinario",
         linkText: "Ingreso Veterinario",
-        href: "/Ingresar" 
     },
     {
         Icon: FaDog,
@@ -29,7 +28,7 @@ export const tarjetaData : TarjetaData[]= [
     {
         Icon: FaFileMedical,
         title: "Informes y Recetas",
-        linkText: "Ver informes y detalles",
+        linkText: "Ver informes",
         href: "/Ver informes" 
     },
     {
